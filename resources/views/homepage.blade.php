@@ -1,6 +1,23 @@
 @extends('layout')
 @section('content')
-    <div id="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238671.18476161046!2d104.58098285984559!3d20.822123472175583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3133974072788b09%3A0xe9c4ec11b443a51b!2zTeG7mWMgQ2jDonUgRGlzdHJpY3QsIFNvbiBMYSwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1608486497444!5m2!1sen!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="true" aria-hidden="true" tabindex="0"></iframe>
+<div class="background-left"></div>
+<div class="maincontent">
+    <div class="home-img d-inline-block">
+        <img src="{{ asset('images/home.jpg') }}" alt="" class="w-100 home-image">
     </div>
+    <div class="desciption d-inline-block">
+        <h4>{{ __('home.hello') }}</h4>
+        <h1 class="d-inline-block">{{ __('home.pre_name') }}</h1>
+        <h1 class="d-inline-block full_name">{{ __('home.full_name') }}</h1>
+        <p class="text-content">{{ __('home.description') }}</p>
+        <button class="btn btn-primary about_me">{{ __('home.more_about_me') }}<i class="fas fa-user"></i></button>
+    </div>
+    <div class="right-menu mr-3">
+        <a href="#" class="menu-item"><i class="fas fa-home"></i></a>
+        <a href="#" class="menu-item"><i class="fas fa-user"></i></a>
+        <a href="#" class="menu-item"><i class="fas fa-briefcase"></i></a>
+        <a href="#" class="menu-item"><i class="fas fa-envelope-open"></i></a>
+        <a href="#" class="menu-item"><i class="fas fa-comments"></i></a>
+    </div>
+</div>
 @endsection
